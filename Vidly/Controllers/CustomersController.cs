@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,41 +11,42 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customers
-        public ActionResult Index()
+        private ApplicationDbContext _context;
+
+        public CustomersController()
         {
-            var customer = new Customer();
-
-            var listCustomers = new List<Customer>
-            {
-                new Customer { Id = 1, Name = "John Smith"},
-                new Customer { Id = 2, Name = "Mary Williams"}
-            };
-
-            var viewModel = new ListCostumersViewModel
-            {
-                CustomersList = listCustomers
-            };
-
-            return View(viewModel);
+            _context = new ApplicationDbContext();
         }
 
-        [Route("customers/details/{id}")]
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+        // GET: Customers
+        public ViewResult Index()
+        {
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+
+            //var listCustomers = new List<Customer>
+            //{
+            //    new Customer { Id = 1, Name = "John Smith"},
+            //    new Customer { Id = 2, Name = "Mary Williams"}
+            //};
+
+            //var viewModel = new ListCostumersViewModel
+            //{
+            //    CustomersList = listCustomers
+            //};
+
+            return View(customers);
+        }
+
         public ActionResult Details(int id)
         {
-            var customer = new Customer();
-            if (id == 1)
-            {
-                customer.Name = "John Smith";
-            }
-            else if (id == 2)
-            {
-                customer.Name = "Mary Williams";
-            }
-            else
-            {
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
+            if (customer == null)
                 return HttpNotFound();
-            }
 
             return View(customer);
         }

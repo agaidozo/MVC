@@ -203,10 +203,109 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701112359359_InitialModel.cs" />
+    <Compile Include="Migrations\201701112359359_InitialModel.Designer.cs">
+      <DependentUpon>201701112359359_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120016321_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201701120016321_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201701120016321_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120021052_addMembershipType.cs" />
+    <Compile Include="Migrations\201701120021052_addMembershipType.Designer.cs">
+      <DependentUpon>201701120021052_addMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120023087_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201701120023087_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201701120023087_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120032022_ApplyMigrationsToCustomerName.cs" />
+    <Compile Include="Migrations\201701120032022_ApplyMigrationsToCustomerName.Designer.cs">
+      <DependentUpon>201701120032022_ApplyMigrationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120125452_CreateMovie.cs" />
+    <Compile Include="Migrations\201701120125452_CreateMovie.Designer.cs">
+      <DependentUpon>201701120125452_CreateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120136081_UpdateMembershipTypeDescription.cs" />
+    <Compile Include="Migrations\201701120136081_UpdateMembershipTypeDescription.Designer.cs">
+      <DependentUpon>201701120136081_UpdateMembershipTypeDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120142034_UpdateMembershipTypeDescription1.cs" />
+    <Compile Include="Migrations\201701120142034_UpdateMembershipTypeDescription1.Designer.cs">
+      <DependentUpon>201701120142034_UpdateMembershipTypeDescription1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120144402_PopulateMembershipTypes1.cs" />
+    <Compile Include="Migrations\201701120144402_PopulateMembershipTypes1.Designer.cs">
+      <DependentUpon>201701120144402_PopulateMembershipTypes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120151134_UpdateMembership.cs" />
+    <Compile Include="Migrations\201701120151134_UpdateMembership.Designer.cs">
+      <DependentUpon>201701120151134_UpdateMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120200007_UpdateBirthday.cs" />
+    <Compile Include="Migrations\201701120200007_UpdateBirthday.Designer.cs">
+      <DependentUpon>201701120200007_UpdateBirthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120206391_AddGenre.cs" />
+    <Compile Include="Migrations\201701120206391_AddGenre.Designer.cs">
+      <DependentUpon>201701120206391_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120207208_PopulateGenre.cs" />
+    <Compile Include="Migrations\201701120207208_PopulateGenre.Designer.cs">
+      <DependentUpon>201701120207208_PopulateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120211204_PopulateGenreMovie.cs" />
+    <Compile Include="Migrations\201701120211204_PopulateGenreMovie.Designer.cs">
+      <DependentUpon>201701120211204_PopulateGenreMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120224294_ForengKeysFromMovie.cs" />
+    <Compile Include="Migrations\201701120224294_ForengKeysFromMovie.Designer.cs">
+      <DependentUpon>201701120224294_ForengKeysFromMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120226261_MoreForeignKey.cs" />
+    <Compile Include="Migrations\201701120226261_MoreForeignKey.Designer.cs">
+      <DependentUpon>201701120226261_MoreForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120227392_CreateForengKey.cs" />
+    <Compile Include="Migrations\201701120227392_CreateForengKey.Designer.cs">
+      <DependentUpon>201701120227392_CreateForengKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120239162_ReordenateTableGenres.cs" />
+    <Compile Include="Migrations\201701120239162_ReordenateTableGenres.Designer.cs">
+      <DependentUpon>201701120239162_ReordenateTableGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120245111_RecriationGenre.cs" />
+    <Compile Include="Migrations\201701120245111_RecriationGenre.Designer.cs">
+      <DependentUpon>201701120245111_RecriationGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120247118_StartFromZeroGenre.cs" />
+    <Compile Include="Migrations\201701120247118_StartFromZeroGenre.Designer.cs">
+      <DependentUpon>201701120247118_StartFromZeroGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120249173_CreateGenreNoData.cs" />
+    <Compile Include="Migrations\201701120249173_CreateGenreNoData.Designer.cs">
+      <DependentUpon>201701120249173_CreateGenreNoData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120301130_AllAtributesFromGenreAndMovies.cs" />
+    <Compile Include="Migrations\201701120301130_AllAtributesFromGenreAndMovies.Designer.cs">
+      <DependentUpon>201701120301130_AllAtributesFromGenreAndMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701120304482_dataForGenre.cs" />
+    <Compile Include="Migrations\201701120304482_dataForGenre.Designer.cs">
+      <DependentUpon>201701120304482_dataForGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701122321012_AddFKMovieToGenre.cs" />
+    <Compile Include="Migrations\201701122321012_AddFKMovieToGenre.Designer.cs">
+      <DependentUpon>201701122321012_AddFKMovieToGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -280,6 +379,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\ListMovies.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -291,6 +391,80 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701112359359_InitialModel.resx">
+      <DependentUpon>201701112359359_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120016321_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201701120016321_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120021052_addMembershipType.resx">
+      <DependentUpon>201701120021052_addMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120023087_PopulateMembershipTypes.resx">
+      <DependentUpon>201701120023087_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120032022_ApplyMigrationsToCustomerName.resx">
+      <DependentUpon>201701120032022_ApplyMigrationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120125452_CreateMovie.resx">
+      <DependentUpon>201701120125452_CreateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120136081_UpdateMembershipTypeDescription.resx">
+      <DependentUpon>201701120136081_UpdateMembershipTypeDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120142034_UpdateMembershipTypeDescription1.resx">
+      <DependentUpon>201701120142034_UpdateMembershipTypeDescription1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120144402_PopulateMembershipTypes1.resx">
+      <DependentUpon>201701120144402_PopulateMembershipTypes1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120151134_UpdateMembership.resx">
+      <DependentUpon>201701120151134_UpdateMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120200007_UpdateBirthday.resx">
+      <DependentUpon>201701120200007_UpdateBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120206391_AddGenre.resx">
+      <DependentUpon>201701120206391_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120207208_PopulateGenre.resx">
+      <DependentUpon>201701120207208_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120211204_PopulateGenreMovie.resx">
+      <DependentUpon>201701120211204_PopulateGenreMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120224294_ForengKeysFromMovie.resx">
+      <DependentUpon>201701120224294_ForengKeysFromMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120226261_MoreForeignKey.resx">
+      <DependentUpon>201701120226261_MoreForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120227392_CreateForengKey.resx">
+      <DependentUpon>201701120227392_CreateForengKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120239162_ReordenateTableGenres.resx">
+      <DependentUpon>201701120239162_ReordenateTableGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120245111_RecriationGenre.resx">
+      <DependentUpon>201701120245111_RecriationGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120247118_StartFromZeroGenre.resx">
+      <DependentUpon>201701120247118_StartFromZeroGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120249173_CreateGenreNoData.resx">
+      <DependentUpon>201701120249173_CreateGenreNoData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120301130_AllAtributesFromGenreAndMovies.resx">
+      <DependentUpon>201701120301130_AllAtributesFromGenreAndMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701120304482_dataForGenre.resx">
+      <DependentUpon>201701120304482_dataForGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701122321012_AddFKMovieToGenre.resx">
+      <DependentUpon>201701122321012_AddFKMovieToGenre.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
