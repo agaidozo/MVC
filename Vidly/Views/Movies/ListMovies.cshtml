@@ -6,6 +6,10 @@
 
 <h2>Movies</h2>
 
+@Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary", style = "margin-bottom: 10px;" })
+
+<br />
+
 @if (!Model.Any())
 {
     <p>We don't have any movies yet.</p>
@@ -24,7 +28,7 @@ else
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(movies.Name, "Details", "Movies", new {id = movies.Id}, null)
+                        @Html.ActionLink(movies.Name, "Edit", "Movies", new { id = movies.Id }, null)
                     </td>
                     <td>
                         @movies.Genre.Name

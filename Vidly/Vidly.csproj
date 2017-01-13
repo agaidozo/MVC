@@ -299,6 +299,62 @@
     <Compile Include="Migrations\201701122321012_AddFKMovieToGenre.Designer.cs">
       <DependentUpon>201701122321012_AddFKMovieToGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701130123432_UpdateDateTimeMovieNull.cs" />
+    <Compile Include="Migrations\201701130123432_UpdateDateTimeMovieNull.Designer.cs">
+      <DependentUpon>201701130123432_UpdateDateTimeMovieNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130159000_DropTableMovie.cs" />
+    <Compile Include="Migrations\201701130159000_DropTableMovie.Designer.cs">
+      <DependentUpon>201701130159000_DropTableMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130200466_AddMovieTable.cs" />
+    <Compile Include="Migrations\201701130200466_AddMovieTable.Designer.cs">
+      <DependentUpon>201701130200466_AddMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130204107_AddMovieTable1.cs" />
+    <Compile Include="Migrations\201701130204107_AddMovieTable1.Designer.cs">
+      <DependentUpon>201701130204107_AddMovieTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130206289_AddMovieTable2.cs" />
+    <Compile Include="Migrations\201701130206289_AddMovieTable2.Designer.cs">
+      <DependentUpon>201701130206289_AddMovieTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130207432_AddMovieTable3.cs" />
+    <Compile Include="Migrations\201701130207432_AddMovieTable3.Designer.cs">
+      <DependentUpon>201701130207432_AddMovieTable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130209259_AddMovieTable4.cs" />
+    <Compile Include="Migrations\201701130209259_AddMovieTable4.Designer.cs">
+      <DependentUpon>201701130209259_AddMovieTable4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130209593_AddMovieTable5.cs" />
+    <Compile Include="Migrations\201701130209593_AddMovieTable5.Designer.cs">
+      <DependentUpon>201701130209593_AddMovieTable5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130214531_AddMovieTable6.cs" />
+    <Compile Include="Migrations\201701130214531_AddMovieTable6.Designer.cs">
+      <DependentUpon>201701130214531_AddMovieTable6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130225052_addFK.cs" />
+    <Compile Include="Migrations\201701130225052_addFK.Designer.cs">
+      <DependentUpon>201701130225052_addFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130227485_addFK1.cs" />
+    <Compile Include="Migrations\201701130227485_addFK1.Designer.cs">
+      <DependentUpon>201701130227485_addFK1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130229192_addFK2.cs" />
+    <Compile Include="Migrations\201701130229192_addFK2.Designer.cs">
+      <DependentUpon>201701130229192_addFK2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130232234_restos.cs" />
+    <Compile Include="Migrations\201701130232234_restos.Designer.cs">
+      <DependentUpon>201701130232234_restos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130235468_restos1.cs" />
+    <Compile Include="Migrations\201701130235468_restos1.Designer.cs">
+      <DependentUpon>201701130235468_restos1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -311,6 +367,8 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ListCostumersViewModel.cs" />
     <Compile Include="ViewModels\ListMoviesViewModel.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -380,6 +438,8 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\ListMovies.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -464,6 +524,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701122321012_AddFKMovieToGenre.resx">
       <DependentUpon>201701122321012_AddFKMovieToGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130123432_UpdateDateTimeMovieNull.resx">
+      <DependentUpon>201701130123432_UpdateDateTimeMovieNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130159000_DropTableMovie.resx">
+      <DependentUpon>201701130159000_DropTableMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130200466_AddMovieTable.resx">
+      <DependentUpon>201701130200466_AddMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130204107_AddMovieTable1.resx">
+      <DependentUpon>201701130204107_AddMovieTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130206289_AddMovieTable2.resx">
+      <DependentUpon>201701130206289_AddMovieTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130207432_AddMovieTable3.resx">
+      <DependentUpon>201701130207432_AddMovieTable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130209259_AddMovieTable4.resx">
+      <DependentUpon>201701130209259_AddMovieTable4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130209593_AddMovieTable5.resx">
+      <DependentUpon>201701130209593_AddMovieTable5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130214531_AddMovieTable6.resx">
+      <DependentUpon>201701130214531_AddMovieTable6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130225052_addFK.resx">
+      <DependentUpon>201701130225052_addFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130227485_addFK1.resx">
+      <DependentUpon>201701130227485_addFK1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130229192_addFK2.resx">
+      <DependentUpon>201701130229192_addFK2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130232234_restos.resx">
+      <DependentUpon>201701130232234_restos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130235468_restos1.resx">
+      <DependentUpon>201701130235468_restos1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
