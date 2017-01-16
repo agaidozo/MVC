@@ -10,13 +10,17 @@ namespace Vidly.Models
     {
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
+        [Required]
         [Display(Name = "Release Date")]
         public DateTime Release { get; set; }
 
         public DateTime? Added { get; set; }
 
+        [Required]
+        [Range(1, 20)]
         [Display(Name = "Number in Stock")]
         public int StockNumber { get; set; }
 
