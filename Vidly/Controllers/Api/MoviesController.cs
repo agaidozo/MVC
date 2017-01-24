@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Vidly.Models;
+using System.Data.Entity;
 
 namespace Vidly.Controllers.Api
 {
@@ -20,7 +21,7 @@ namespace Vidly.Controllers.Api
         //GET api/movies
         public IEnumerable<Movie> GetMovies()
         {
-            return _context.Movies.ToList();
+            return _context.Movies.Include(m => m.Genre).ToList();
         }
 
         //GET api/movies/1
@@ -56,7 +57,7 @@ namespace Vidly.Controllers.Api
 
             var movieInDb = _context.Movies.SingleOrDefault(m => m.Id == id);
 
-            if(movieInDb==null)
+            if (movieInDb == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
             movieInDb.GenreId = movie.GenreId;
