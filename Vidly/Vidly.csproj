@@ -236,12 +236,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\RetailController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
+    <Compile Include="Dtos\RentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -414,6 +417,34 @@
     <Compile Include="Migrations\201701242345339_AddPhoneToUser.Designer.cs">
       <DependentUpon>201701242345339_AddPhoneToUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701262134223_AddRetailTable.cs" />
+    <Compile Include="Migrations\201701262134223_AddRetailTable.Designer.cs">
+      <DependentUpon>201701262134223_AddRetailTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701262141364_AddDateReturnedAndDateRented.cs" />
+    <Compile Include="Migrations\201701262141364_AddDateReturnedAndDateRented.Designer.cs">
+      <DependentUpon>201701262141364_AddDateReturnedAndDateRented.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701262148365_UpdateColumnNames.cs" />
+    <Compile Include="Migrations\201701262148365_UpdateColumnNames.Designer.cs">
+      <DependentUpon>201701262148365_UpdateColumnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701262210226_AddNumberAvailableInMoviesTable.cs" />
+    <Compile Include="Migrations\201701262210226_AddNumberAvailableInMoviesTable.Designer.cs">
+      <DependentUpon>201701262210226_AddNumberAvailableInMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701262213304_ChangeTheNumberAvailable.cs" />
+    <Compile Include="Migrations\201701262213304_ChangeTheNumberAvailable.Designer.cs">
+      <DependentUpon>201701262213304_ChangeTheNumberAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701270021193_ExcludeRentalsTable.cs" />
+    <Compile Include="Migrations\201701270021193_ExcludeRentalsTable.Designer.cs">
+      <DependentUpon>201701270021193_ExcludeRentalsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701270022127_IncludeRentailTable.cs" />
+    <Compile Include="Migrations\201701270022127_IncludeRentailTable.Designer.cs">
+      <DependentUpon>201701270022127_IncludeRentailTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -423,6 +454,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -543,12 +575,15 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bloodhound.js" />
+    <Content Include="Scripts\bloodhound.min.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -633,6 +668,10 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\typeahead.bundle.js" />
+    <Content Include="Scripts\typeahead.bundle.min.js" />
+    <Content Include="Scripts\typeahead.jquery.js" />
+    <Content Include="Scripts\typeahead.jquery.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -677,6 +716,7 @@
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\New.cshtml" />
     <Content Include="Views\Movies\ReadyOnlyList.cshtml" />
+    <Content Include="Views\Rentals\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -815,6 +855,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701242345339_AddPhoneToUser.resx">
       <DependentUpon>201701242345339_AddPhoneToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701262134223_AddRetailTable.resx">
+      <DependentUpon>201701262134223_AddRetailTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701262141364_AddDateReturnedAndDateRented.resx">
+      <DependentUpon>201701262141364_AddDateReturnedAndDateRented.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701262148365_UpdateColumnNames.resx">
+      <DependentUpon>201701262148365_UpdateColumnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701262210226_AddNumberAvailableInMoviesTable.resx">
+      <DependentUpon>201701262210226_AddNumberAvailableInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701262213304_ChangeTheNumberAvailable.resx">
+      <DependentUpon>201701262213304_ChangeTheNumberAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701270021193_ExcludeRentalsTable.resx">
+      <DependentUpon>201701270021193_ExcludeRentalsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701270022127_IncludeRentailTable.resx">
+      <DependentUpon>201701270022127_IncludeRentailTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

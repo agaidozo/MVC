@@ -28,5 +28,6 @@ namespace Vidly.Models
 
         public int GenreId { get; set; }
 
+        public byte NumberAvailable { get; set; }
     }
 }
